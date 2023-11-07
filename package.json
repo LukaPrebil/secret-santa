@@ -1,0 +1,20 @@
+{
+  "name": "@lukapg/secret-santa",
+  "version": "1.0.0",
+  "description": "Generates and sends emails for a secret santa gift exchange.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Luka Prebil Grintal",
+  "license": "Unlicense",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "base-64": "^1.0.0",
+    "googleapis": "^105.0.0"
+  }
+}
