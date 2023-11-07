@@ -2,7 +2,10 @@
   "name": "@lukapg/secret-santa",
   "version": "1.0.0",
   "description": "Generates and sends emails for a secret santa gift exchange.",
-  "repository": "https://github.com/LukaPrebil/secret-santa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukaPrebil/secret-santa.git"
+  },
   "author": "Luka Prebil Grintal",
   "license": "Unlicense",
   "main": "index.js",
