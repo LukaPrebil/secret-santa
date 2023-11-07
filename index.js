@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 import { getPairs } from "./generatePairs.js";
 import { authorize } from "./googleLogin.js";
-import people from "./people.json" assert {type: "json"};
+import people from "./people.json" assert { type: "json" };
 import b64 from "base-64";
 
 const auth = await authorize();
@@ -22,11 +22,11 @@ Luka`;
     return;
   }
 
-  // const result = await gmail.users.messages.send({
-  //   userId: "me",
-  //   requestBody: { raw: b64.encode(message) },
-  // });
-  // return result;
+  const result = await gmail.users.messages.send({
+    userId: "me",
+    requestBody: { raw: b64.encode(message) },
+  });
+  return result;
 }
 
 const pairs = getPairs(people);
